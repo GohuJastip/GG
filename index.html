@@ -59,18 +59,20 @@
             margin-bottom: 10px; /* Menambahkan sedikit jarak bawah untuk pemisahan */
             font-size: 14px; /* Ukuran font lebih kecil untuk tagline */
         }
+        /* Image Container */
         .image-container {
-            text-align: center;
-            margin-top: 20px;
-            width: 100%; /* Mengatur lebar container agar sesuai dengan layar */
-            overflow-x: auto; /* Menambahkan scroll horizontal */
-            white-space: nowrap; /* Membuat gambar tampil dalam satu baris */
+            position: relative;
+            width: 100%; /* Menjamin lebar container mengikuti ukuran layar */
+            overflow-x: scroll; /* Menambahkan scroll horizontal */
+            display: flex; /* Flexbox untuk menampilkan gambar berurutan */
+            scroll-snap-type: x mandatory; /* Memaksa scroll berhenti pada setiap gambar */
+            -webkit-overflow-scrolling: touch; /* Memberikan scroll yang halus di perangkat mobile */
         }
         .image-container img {
-            width: 30%; /* Setiap gambar memiliki lebar 30% dari container */
+            width: 100vw; /* Setiap gambar mengambil 100% lebar layar */
             height: auto; /* Menjaga rasio gambar agar tidak terdistorsi */
-            margin: 0 10px; /* Memberikan jarak antar gambar */
-            display: inline-block; /* Menampilkan gambar secara horizontal */
+            object-fit: cover; /* Memastikan gambar menutupi area tanpa terdistorsi */
+            scroll-snap-align: start; /* Memastikan setiap gambar berhenti pada awal ketika digeser */
         }
         /* Footer */
         footer {
@@ -103,7 +105,7 @@
         <h1>Selamat datang di <span>Sagu Jastip</span>!</h1>
         <div class="tagline">"Titipan Aman, No Drama! #SaguJastip"</div>
 
-        <!-- Image Container with Scroll -->
+        <!-- Image Container with Horizontal Scroll -->
         <div class="image-container">
             <!-- Gambar pertama -->
             <img src="ternate.png" alt="Kota Ternate">
