@@ -63,11 +63,14 @@
             text-align: center;
             margin-top: 20px;
             width: 100%; /* Mengatur lebar container agar sesuai dengan layar */
+            overflow-x: auto; /* Menambahkan scroll horizontal */
+            white-space: nowrap; /* Membuat gambar tampil dalam satu baris */
         }
         .image-container img {
-            width: 100%; /* Gambar akan menyesuaikan lebar layar */
+            width: 30%; /* Setiap gambar memiliki lebar 30% dari container */
             height: auto; /* Menjaga rasio gambar agar tidak terdistorsi */
-            display: block; /* Menghilangkan jarak bawah gambar */
+            margin: 0 10px; /* Memberikan jarak antar gambar */
+            display: inline-block; /* Menampilkan gambar secara horizontal */
         }
         /* Footer */
         footer {
@@ -100,9 +103,14 @@
         <h1>Selamat datang di <span>Sagu Jastip</span>!</h1>
         <div class="tagline">"Titipan Aman, No Drama! #SaguJastip"</div>
 
-        <!-- Image -->
+        <!-- Image Container with Scroll -->
         <div class="image-container">
+            <!-- Gambar pertama -->
             <img src="ternate.png" alt="Kota Ternate">
+            <!-- Gambar kedua -->
+            <img src="bacan.jpg" alt="Bacan">
+            <!-- Gambar ketiga -->
+            <img src="obi.jpg" alt="Obi">
         </div>
     </div>
 
