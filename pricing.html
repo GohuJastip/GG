@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harga Layanan Ekspedisi dan Jasa Titipan Raja Jastip">
+    <title>Harga - Raja Jastip</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #004f70;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff8c00;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .pricing-card {
+            background-color: #f0f4f7;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #004f70;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .pricing-card ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card a {
+            text-decoration: none;
+            background-color: #ff8c00;
+            padding: 12px 30px;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .pricing-card a:hover {
+            background-color: #e77a00;
+        }
+
+        .cta {
+            background-color: #004f70;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #ff8c00;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #e77a00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer .social-icons a {
+            margin: 0 15px;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff8c00;
+        }
+
+        /* Responsif */
+        @media screen and (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .cta h2, .cta p {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50" alt="Raja Jastip Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="pricing.html">Harga</a></li>
+                    <li><a href="tracking.html">Tracking</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Cek Harga Layanan Kami</h2>
+            <div class="pricing-cards">
+                <!-- Paket Pengiriman Barang -->
+                <div class="pricing-card">
+                    <h3>Pengiriman Barang</h3>
+                    <p>Pengiriman barang ke seluruh Indonesia dan luar negeri.</p>
+                    <div class="price">Rp 50.000 / Kg</div>
+                    <ul>
+                        <li>Pengiriman Cepat</li>
+                        <li>Tracking Real-Time</li>
+                        <li>Jaminan Keamanan</li>
+                    </ul>
+                    <a href="contact.html">Pesan Sekarang</a>
+                </div>
+
+                <!-- Paket Jasa Titipan Belanja -->
+                <div class="pricing-card">
+                    <h3>Jasa Titipan Belanja</h3>
+                    <p>Belanja barang dari luar negeri dan kirim langsung ke alamat Anda.</p>
+                    <div class="price">Rp 100.000 / Paket</div>
+                    <ul>
+                        <li>Belanja dari Negara Asal</li>
+                        <li>Pengiriman Terjamin</li>
+                        <li>Harga Kompetitif</li>
+                    </ul>
+                    <a href="contact.html">Pesan Sekarang</a>
+                </div>
+
+                <!-- Paket Kargo & Logistik -->
+                <div class="pricing-card">
+                    <h3>Kargo & Logistik</h3>
+                    <p>Layanan pengiriman barang besar dan berat.</p>
+                    <div class="price">Hubungi Kami</div>
+                    <ul>
+                        <li>Pengiriman dalam Jumlah Besar</li>
+                        <li>Layanan untuk Barang Berat</li>
+                        <li>Jaminan Pengiriman Tepat Waktu</li>
+                    </ul>
+                    <a href="contact.html">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Siap Kirim Barang Anda?</h2>
+            <p>Hubungi kami untuk memilih paket yang sesuai dengan kebutuhan Anda!</p>
+            <a href="contact.html" class="cta-button">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Raja Jastip. Semua hak cipta dilindungi.</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
